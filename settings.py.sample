@@ -1,0 +1,11 @@
+# -*- coding: utf-8 -*-
+
+
+# path to sqlite database file
+DB_PATH = 'sim.sqlite3'
+
+# websocket url definition
+# example http://127.0.0.1:8888/websock/
+APP_ADDRESS = '127.0.0.1'
+APP_PORT = 8888
+APP_WEBSOCK_PATH = 'websock'

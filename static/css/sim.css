@@ -1,0 +1,30 @@
+body {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+}
+.message {
+    border-bottom: 1px solid;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.message:last-child {
+    border-bottom: none;
+}
+.tech_info {
+    text-align: right;
+}
+
+.label-critical,
+.badge-critical {
+  background-color: #ff0000;
+}
+
+.well {
+    margin-bottom: 0;
+    text-align: center;
+    cursor: pointer;
+}

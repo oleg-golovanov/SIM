@@ -1,0 +1,13 @@
+## Project files
+settings.py
+*.sqlite*
+
+## Python files
+*.pyc
+
+## Mac OS standard files
+._.DS_Store
+.DS_Store
+
+## PyCharm files
+.idea

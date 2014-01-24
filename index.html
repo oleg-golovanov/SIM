@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+    <head>
+        <meta content="text/html; charset=utf-8" http-equiv="content-type">
+        <title>Hello</title>
+        <link rel="stylesheet" type="text/css" href="static/css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="static/css/bootstrap-responsive.min.css" />
+        <link rel="stylesheet" type="text/css" href="static/css/sim.css" />
+
+        <script type="text/javascript" src="static/js/jquery-2.0.3.min.js"></script>
+        <script type="text/javascript" src="static/js/bootstrap.min.js"></script>
+        <script type="text/javascript">
+            var ws = new WebSocket('ws://{{address}}:{{port}}/{{path}}/');
+        </script>
+        <script type="text/javascript" src="static/js/sim.js"></script>
+    </head>
+    <body>
+
+        <!--Critical-->
+        <div class="row-fluid">
+            <!--Шапка-->
+            <div id="critical-header" class="span8 offset2 well well-small">
+                <span class="pull-left">
+                    <i class="icon-chevron-right"></i>
+                </span>
+                <span><strong>Critical</strong></span>
+                <span class="pull-right">
+                    <span id="critical-counter" class="badge badge-critical">0</span>
+                </span>
+            </div>
+            <!--Сообщения-->
+            <div class="row-fluid">
+                <div class="span8 offset2">
+                    <ul id="critical-messages"></ul>
+                </div>
+            </div>
+        </div>
+
+        <!--Error-->
+        <div class="row-fluid">
+            <!--Шапка-->
+            <div id="error-header" class="span8 offset2 well well-small">
+                <span class="pull-left">
+                    <i class="icon-chevron-right"></i>
+                </span>
+                <span><strong>Error</strong></span>
+                <span class="pull-right">
+                    <span id="error-counter" class="badge badge-important">0</span>
+                </span>
+            </div>
+            <!--Сообщения-->
+            <div class="row-fluid">
+                <div class="span8 offset2">
+                    <ul id="error-messages"></ul>
+                </div>
+            </div>
+        </div>
+
+        <!--Warning-->
+        <div class="row-fluid">
+            <!--Шапка-->
+            <div id="warning-header" class="span8 offset2 well well-small">
+                <span class="pull-left">
+                    <i class="icon-chevron-right"></i>
+                </span>
+                <span><strong>Warning</strong></span>
+                <span class="pull-right">
+                    <span id="warning-counter" class="badge badge-warning">0</span>
+                </span>
+            </div>
+            <!--Сообщения-->
+            <div class="row-fluid">
+                <div class="span8 offset2">
+                    <ul id="warning-messages"></ul>
+                </div>
+            </div>
+        </div>
+
+        <!--Info-->
+        <div class="row-fluid">
+            <!--Шапка-->
+            <div id="info-header" class="span8 offset2 well well-small">
+                <span class="pull-left">
+                    <i class="icon-chevron-right"></i>
+                </span>
+                <span><strong>Information</strong></span>
+                <span class="pull-right">
+                    <span id="info-counter" class="badge badge-info">0</span>
+                </span>
+            </div>
+            <!--Сообщения-->
+            <div class="row-fluid">
+                <div class="span8 offset2">
+                    <ul id="info-messages"></ul>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
